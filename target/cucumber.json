@@ -1,0 +1,209 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 343877111,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in \"ASCAP Dashboard\" using \"Chrome\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ASCAP Dashboard",
+                  "offset": 12
+                },
+                {
+                  "val": "Chrome",
+                  "offset": 36
+                }
+              ],
+              "location": "WebStepDefs.navigationToDashboard(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9096544913,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpLandingPage()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Validate the Writer enrollment for US resident without direct deposit",
+        "description": "",
+        "id": "membership-application-flow;validate-the-writer-enrollment-for-us-resident-without-direct-deposit;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2526820813,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5571327228,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User selects \"Music Creators\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Music Creators",
+                  "offset": 14
+                }
+              ],
+              "location": "WebStepDefs.selectTab(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4677921555,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User clicks on \"Join\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Join",
+                  "offset": 16
+                }
+              ],
+              "location": "WebStepDefs.clickOnLink(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96701926,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User navigates to the \"Membership Application\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Membership Application",
+                  "offset": 23
+                }
+              ],
+              "location": "WebStepDefs.navigateToPage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 498342828,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User selects membership type as \"writer\" in page \"MembershipApplication\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "writer",
+                  "offset": 33
+                },
+                {
+                  "val": "MembershipApplication",
+                  "offset": 50
+                }
+              ],
+              "location": "WebStepDefs.selectMembershipType(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114081467,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User clicks on \"Continue\" button in \"Membership Application\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                },
+                {
+                  "val": "Membership Application",
+                  "offset": 37
+                }
+              ],
+              "location": "WebStepDefs.clickOnButton(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64166061,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "System should display the General Section",
+            "match": {
+              "location": "WebStepDefs.validateGeneralSection()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@MembershipApplicationWriters"
+          },
+          {
+            "line": 27,
+            "name": "@writer_US_resident_with_DD"
+          },
+          {
+            "line": 27,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Membership Application flow",
+    "description": "",
+    "id": "membership-application-flow",
+    "keyword": "Feature",
+    "uri": "MembershipApplicationWriter.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@MembershipApplicationWriters"
+      }
+    ]
+  }
+]
